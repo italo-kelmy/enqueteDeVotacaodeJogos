@@ -19,6 +19,7 @@ HTTPS obrigatório (redirecionamento automático)
 Integração com banco de dados MySQL
 
 Testes automatizados com JUnit e Mockito
+
 ---
 ## 🔐 Segurança
 Autenticação via JWT
@@ -28,6 +29,7 @@ Token necessário para acessar endpoints protegidos (via cabeçalho Authorizatio
 Proteção dos endpoints sensíveis com Spring Security
 
 Obrigatoriedade de uso de HTTPS em todas as requisições
+
 ---
 ## 🧪 Testes
 Foram implementados testes com:
@@ -45,6 +47,7 @@ Jogo
 Votação
 
 Ranking
+
 ---
 ## 🚀 Tecnologias Utilizadas
 Java 24
@@ -62,6 +65,7 @@ MySQL
 JUnit 5
 
 Mockito
+
 ---
 ## 📚 Endpoints da API
 🔓 Públicos
@@ -79,6 +83,7 @@ GET /jogos/categoria?categoria=nome – Busca por categoria
 POST /jogos/votacao – Registra um voto
 
 GET /jogos/ranking – Ranking de jogos mais votados (somente para ROLE_ADMIN)
+
 ---
 ## 👨‍💻 Desenvolvedor
 Desenvolvido por Italo Kelmy – 2025

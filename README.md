@@ -1,65 +1,84 @@
-🗳️ Enquete de Votação de Jogos
-Projeto desenvolvido com Spring Boot que disponibiliza uma API REST para votação em jogos. Os usuários podem se cadastrar, fazer login, votar em seus jogos favoritos, visualizar listas de jogos, buscar por nome ou categoria, e consultar um ranking com os jogos mais votados.
+Enquete de Votação de Jogos
+Projeto desenvolvido com Spring Boot, oferecendo uma API REST para votação em jogos. Usuários podem se cadastrar, fazer login, votar em seus jogos favoritos e consultar o ranking dos mais votados — com segurança e controle de acesso via JWT.
 
-🔧 Funcionalidades
-🧑‍💻 Autenticação de Usuários
-Cadastro de novos usuários
+✅ Funcionalidades
+Cadastro e login de usuários (JWT gerado no login)
 
-Login com geração de token JWT
-
-🎮 Gerenciamento de Jogos
 Listagem de todos os jogos
 
 Busca de jogos por nome ou categoria
 
 Votação em jogos
 
-Visualização do ranking dos jogos mais votados
+Visualização do ranking com os jogos mais votados
+
+Apenas usuários autenticados podem votar ou acessar o ranking
+
+HTTPS obrigatório (redirecionamento automático)
+
+Integração com banco de dados MySQL
+
+Testes automatizados com JUnit e Mockito
 
 🔐 Segurança
 Autenticação via JWT
 
-Proteção de endpoints sensíveis com Spring Security
+Token necessário para acessar endpoints protegidos (via cabeçalho Authorization)
 
-Configuração HTTPS
+Proteção dos endpoints sensíveis com Spring Security
 
-🛠️ Tecnologias Utilizadas
-Backend
+Obrigatoriedade de uso de HTTPS em todas as requisições
+
+🧪 Testes
+Foram implementados testes com:
+
+JUnit 5
+
+Mockito
+
+Cobertura de testes para:
+
+Usuário
+
+Jogo
+
+Votação
+
+Ranking
+
+🚀 Tecnologias Utilizadas
 Java 24
 
 Spring Boot 3.4.7
 
 Spring Security
 
-JWT (JSON Web Tokens)
+JWT (JSON Web Token)
 
 JPA / Hibernate
 
 MySQL
 
-Testes
 JUnit 5
 
 Mockito
 
-Testes de Integração
+📚 Endpoints da API
+🔓 Públicos
+POST /cadastro – Cadastro de novo usuário
 
-📚 Documentação da API
-🔓 Endpoints Públicos
-POST /cadastro - Cadastro de novo usuário
+POST /login – Autenticação e geração de token JWT
 
-POST /login - Autenticação e geração de token JWT
+GET /jogos – Listagem geral de jogos
 
-GET /jogos - Listagem de todos os jogos disponíveis
+🔐 Protegidos (JWT obrigatório)
+GET /jogos/{nome} – Busca por nome
 
-🔐 Endpoints Protegidos (Requer autenticação via JWT)
-GET /jogos/{nome} - Busca um jogo pelo nome
+GET /jogos/categoria?categoria=nome – Busca por categoria
 
-GET /jogos/categoria?categoria={categoria} - Busca jogos por categoria
+POST /jogos/votacao – Registra um voto
 
-POST /jogos/votacao - Registra um voto para um jogo
-
-GET /jogos/ranking - Retorna o ranking dos jogos mais votados (requer role ADMIN)
+GET /jogos/ranking – Ranking de jogos mais votados (somente para ROLE_ADMIN)
 
 👨‍💻 Desenvolvedor
 Desenvolvido por Italo Kelmy – 2025

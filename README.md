@@ -1,7 +1,7 @@
-# 🗳️ Enquete de Votação de Jogos
+🗳️ Enquete de Votação de Jogos
 Projeto desenvolvido com Spring Boot, oferecendo uma API REST para votação em jogos. Usuários podem se cadastrar, fazer login, votar em seus jogos favoritos e consultar o ranking dos mais votados — com segurança e controle de acesso via JWT.
 
-## ✅ Funcionalidades
+✅ Funcionalidades
 Cadastro e login de usuários (JWT gerado no login)
 
 Listagem de todos os jogos
@@ -20,8 +20,7 @@ Integração com banco de dados MySQL
 
 Testes automatizados com JUnit e Mockito
 
----
-## 🔐 Segurança
+🔐 Segurança
 Autenticação via JWT
 
 Token necessário para acessar endpoints protegidos (via cabeçalho Authorization)
@@ -30,8 +29,7 @@ Proteção dos endpoints sensíveis com Spring Security
 
 Obrigatoriedade de uso de HTTPS em todas as requisições
 
----
-## 🧪 Testes
+🧪 Testes
 Foram implementados testes com:
 
 JUnit 5
@@ -48,9 +46,8 @@ Votação
 
 Ranking
 
----
-## 🚀 Tecnologias Utilizadas
-Java 24
+🚀 Tecnologias Utilizadas
+Java 17
 
 Spring Boot 3.4.7
 
@@ -66,8 +63,7 @@ JUnit 5
 
 Mockito
 
----
-## 📚 Endpoints da API
+📚 Endpoints da API
 🔓 Públicos
 POST /cadastro – Cadastro de novo usuário
 
@@ -84,6 +80,5 @@ POST /jogos/votacao – Registra um voto
 
 GET /jogos/ranking – Ranking de jogos mais votados (somente para ROLE_ADMIN)
 
----
-## 👨‍💻 Desenvolvedor
-Desenvolvido por Italo Kelmy – 2025
+👨‍💻 Desenvolvedor
+Desenvolvido por Italo Kelmy – 2025 🚀

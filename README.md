@@ -2,83 +2,89 @@
 Projeto desenvolvido com Spring Boot, oferecendo uma API REST para votação em jogos. Usuários podem se cadastrar, fazer login, votar em seus jogos favoritos e consultar o ranking dos mais votados — com segurança e controle de acesso via JWT.
 
 ##✅ Funcionalidades
----Cadastro e login de usuários (JWT gerado no login)
+-Cadastro e login de usuários (JWT gerado no login)
 
----Listagem de todos os jogos
+-Listagem de todos os jogos
 
----Busca de jogos por nome ou categoria
+-Busca de jogos por nome ou categoria
 
----Votação em jogos
+-Votação em jogos
 
----Visualização do ranking com os jogos mais votados
+-Visualização do ranking com os jogos mais votados
 
----Apenas usuários autenticados podem votar ou acessar o ranking
+-Apenas usuários autenticados podem votar ou acessar o ranking
 
----HTTPS obrigatório (redirecionamento automático)
+-HTTPS obrigatório (redirecionamento automático)
 
----Integração com banco de dados MySQL
+-Integração com banco de dados MySQL
 
----Testes automatizados com JUnit e Mockito
+-Testes automatizados com JUnit e Mockito
+
+---
 
 ## 🔐 Segurança
----Autenticação via JWT
+-Autenticação via JWT
 
----Token necessário para acessar endpoints protegidos (via cabeçalho Authorization)
+-Token necessário para acessar endpoints protegidos (via cabeçalho Authorization)
 
----Proteção dos endpoints sensíveis com Spring Security
+-Proteção dos endpoints sensíveis com Spring Security
 
----Obrigatoriedade de uso de HTTPS em todas as requisições
+-Obrigatoriedade de uso de HTTPS em todas as requisições
 
+---
+ 
 ##🧪 Testes
 Foram implementados testes com:
 
----JUnit 5
+-JUnit 5
 
----Mockito
+-Mockito
 
 Cobertura de testes para:
 
----Usuário
+-Usuário
 
----Jogo
+-Jogo
 
----Votação
+-Votação
 
----Ranking
+-Ranking
 
 ##🚀 Tecnologias Utilizadas
----Java 17
+-Java 17
 
----Spring Boot 3.4.7
+-Spring Boot 3.4.7
 
----Spring Security
+-Spring Security
 
----JWT (JSON Web Token)
+-JWT (JSON Web Token)
 
----JPA / Hibernate
+-JPA / Hibernate
 
----MySQL
+-MySQL
 
----JUnit 5
+-JUnit 5
 
----Mockito
+-Mockito
+
+---
 
 ##📚 Endpoints da API
 🔓 Públicos
----POST /cadastro – Cadastro de novo usuário
+-POST /cadastro – Cadastro de novo usuário
 
----POST /login – Autenticação e geração de token JWT
+-POST /login – Autenticação e geração de token JWT
 
----GET /jogos – Listagem geral de jogos
+-GET /jogos – Listagem geral de jogos
 
 🔐 Protegidos (JWT obrigatório)
----GET /jogos/{nome} – Busca por nome
+-GET /jogos/{nome} – Busca por nome
 
----GET /jogos/categoria?categoria=nome – Busca por categoria
+-GET /jogos/categoria?categoria=nome – Busca por categoria
 
----POST /jogos/votacao – Registra um voto
+-POST /jogos/votacao – Registra um voto
 
----GET /jogos/ranking – Ranking de jogos mais votados (somente para ROLE_ADMIN)
-
+-GET /jogos/ranking – Ranking de jogos mais votados (somente para ROLE_ADMIN)
+---
 ## 👨‍💻 Desenvolvedor
----Desenvolvido por Italo Kelmy – 2025 🚀
+-Desenvolvido por Italo Kelmy – 2025 🚀

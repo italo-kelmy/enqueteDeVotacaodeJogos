@@ -50,7 +50,7 @@ Cobertura de testes para:
 
 - Ranking
 
-##🚀 Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 - Java 17
 
 - Spring Boot 3.4.7
@@ -69,7 +69,7 @@ Cobertura de testes para:
 
 ---
 
-##📚 Endpoints da API
+## 📚 Endpoints da API
 🔓 Públicos
 - POST /cadastro – Cadastro de novo usuário
 
